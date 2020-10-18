@@ -339,6 +339,12 @@ aside.active {
     font-weight: 600;
 }
 
+#welcome h1 small span {
+    display: block;
+    font-size: .5em;
+    margin-top: 15px;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     aside {
