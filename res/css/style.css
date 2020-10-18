@@ -1,0 +1,362 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+p {
+    font-family: "Merriweather";
+    font-weight: 300;
+    line-height: 1.75em;
+    font-size: .95em;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Merriweather";
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+b {
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+    width: 250px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+a {
+    font-weight: 600;
+    color: black;
+}
+
+/* Greeting */
+#greeting {
+    height: 100vh;
+    display: flex;
+}
+
+/* Introduction */
+#introduction {
+    height: 100vh;
+    display: flex;
+}
+
+/* Complication */
+#complication {
+    height: 100vh;
+    display: flex;
+}
+
+/* Resolution */
+#resolution {
+    height: 100vh;
+    display: flex;
+}
+
+/* Message */
+#message {
+    height: 100vh;
+    display: flex;
+}
+
+/* Thank */
+#thank {
+    height: 100vh;
+    display: flex;
+}
+
+/* Gift */
+#gift {
+    height: 100vh;
+    display: flex;
+}
+
+/* Closing */
+#closing {
+    height: 100vh;
+    display: flex;
+}
+
+/* Aside */
+aside.navigation {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    padding-right: 20px;
+    font-family: "Merriweather";
+    opacity: 0;
+    transition: .3s;
+}
+
+aside.navigation ul {
+    margin: 30px 0px;
+}
+
+aside.navigation li {
+    margin: 15px 0px;
+}
+
+aside.navigation li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: .88em;
+}
+
+aside.navigation li a:after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    vertical-align: middle;
+    margin-left: 5px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+aside.navigation li.active a {
+    font-weight: bold;
+}
+
+aside.navigation button {
+    background-color: transparent;
+    border: 2px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    transform: translateX(3px);
+    cursor: pointer;
+}
+
+aside.social-media {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    opacity: 0;
+    text-align: left;
+    padding-left: 20px;
+    font-family: "Merriweather";
+    transition: .3s;
+}
+
+aside.social-media a {
+    margin: 8px 0px;
+    background-color: transparent;
+    border: 2px solid black;
+    width: 33px;
+    height: 33px;
+    border-radius: 4px;
+    transform: translateX(-3px);
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+aside.active {
+    opacity: 1;
+}
+
+/* Welcome */
+#welcome {
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+#welcome h1 {
+    font-family: "Merriweather";
+    font-size: 3.8em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+#welcome h1 small {
+    display: block;
+    margin-top: 20px;
+    font-size: .45em;
+    font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    aside {
+        display: none;
+    }
+    
+    html {
+        overflow: auto !important;
+    }
+    
+    #welcome, #greeting, #introduction, #complication, #resolution, #message, #thank, #gift, #closing{
+        height: auto;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        font-size: .9em;
+    }
+    
+    #welcome h1 {
+        line-break: 1.4em;
+    }
+}
